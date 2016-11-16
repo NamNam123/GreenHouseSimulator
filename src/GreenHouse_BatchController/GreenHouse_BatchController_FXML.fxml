@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GreenHouse_BatchController.GreenHouse_BatchController_FXMLController">
+   <children>
+      <TabPane layoutX="110.0" layoutY="39.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Enter recip">
+               <content>
+                  <AnchorPane prefHeight="600.0" prefWidth="800.0">
+                     <children>
+                        <TextField fx:id="orderID" layoutX="124.0" layoutY="78.0" promptText="Order ID" />
+                        <TextField fx:id="port" layoutX="124.0" layoutY="110.0" promptText="Port " />
+                        <TextField fx:id="ipAddresse" layoutX="124.0" layoutY="174.0" promptText="IP Adresse (String!)" />
+                        <TextField fx:id="greenHouseID" layoutX="124.0" layoutY="46.0" promptText="GreenHouse ID" />
+                        <TextField fx:id="startDate" layoutX="124.0" layoutY="208.0" promptText="Start Date (String!)" />
+                        <TextField fx:id="endDate" layoutX="124.0" layoutY="243.0" promptText="End Date (String!)" />
+                        <TextField fx:id="minTemp" layoutX="306.0" layoutY="78.0" promptText="Min Temp" />
+                        <TextField fx:id="maxTemp" layoutX="306.0" layoutY="46.0" promptText="Max Temp" />
+                        <TextField fx:id="maxWaterLevel" layoutX="306.0" layoutY="174.0" promptText="Max Water Level" />
+                        <TextField fx:id="minWaterLevel" layoutX="306.0" layoutY="208.0" promptText="Min Water Level" />
+                        <TextField fx:id="maxMoist" layoutX="306.0" layoutY="316.0" promptText="Max Moist" />
+                        <TextField fx:id="minMoist" layoutX="306.0" layoutY="351.0" promptText="Min Moist" />
+                        <TextField fx:id="maxBlueLight" layoutX="306.0" layoutY="446.0" promptText="Max BlueLight" />
+                        <TextField fx:id="minBlueLight" layoutX="306.0" layoutY="477.0" promptText="Min BlueLight" />
+                        <Line endX="100.0" layoutX="293.0" layoutY="290.0" rotate="90.0" scaleX="2.6" startX="-100.0" />
+                        <TextField fx:id="setTemp" layoutX="306.0" layoutY="110.0" promptText="Set Temp" />
+                        <TextField fx:id="setWaterLevel" layoutX="306.0" layoutY="243.0" promptText="Set Water Level" />
+                        <Line endX="100.0" layoutX="383.0" layoutY="143.0" scaleX="0.8" startX="-100.0" />
+                        <Line endX="100.0" layoutX="383.0" layoutY="415.0" scaleX="0.8" startX="-100.0" />
+                        <TextField fx:id="setMoist" layoutX="306.0" layoutY="382.0" promptText="Set Moist" />
+                        <TextField fx:id="setBlueLight" layoutX="306.0" layoutY="508.0" promptText="Set BlueLight" />
+                        <Label layoutX="309.0" layoutY="20.0" prefHeight="17.0" prefWidth="143.0" text="TEMP" />
+                        <Line endX="100.0" layoutX="566.0" layoutY="143.0" scaleX="0.8" startX="-100.0" />
+                        <Line endX="100.0" layoutX="383.0" layoutY="279.0" scaleX="0.8" startX="-100.0" />
+                        <Label layoutX="309.0" layoutY="153.0" prefHeight="17.0" prefWidth="143.0" text="WATER" />
+                        <Label layoutX="309.0" layoutY="291.0" prefHeight="17.0" prefWidth="143.0" text="MOIST" />
+                        <Label layoutX="312.0" layoutY="426.0" prefHeight="17.0" prefWidth="143.0" text="BLUE LIGHT" />
+                        <Line endX="100.0" layoutX="475.0" layoutY="290.0" rotate="90.0" scaleX="2.6" startX="-100.0" />
+                        <Label layoutX="489.0" layoutY="20.0" prefHeight="17.0" prefWidth="143.0" text="RED LIGHT" />
+                        <TextField fx:id="maxRedLight" layoutX="486.0" layoutY="46.0" promptText="Max RedLight" />
+                        <TextField fx:id="minRedLight" layoutX="486.0" layoutY="78.0" promptText="Min RedLight" />
+                        <TextField fx:id="setRedLight" layoutX="486.0" layoutY="110.0" promptText="Set RedLight" />
+                        <Label layoutX="489.0" layoutY="153.0" prefHeight="17.0" prefWidth="143.0" text="FANSPEED" />
+                        <TextField fx:id="setFanSpeed" layoutX="486.0" layoutY="174.0" promptText="Set Fan Speed" />
+                        <Line endX="100.0" layoutX="566.0" layoutY="207.0" scaleX="0.8" startX="-100.0" />
+                        <Label layoutX="23.0" layoutY="50.0" prefHeight="17.0" prefWidth="143.0" text="GREEN HOUSE ID" />
+                        <Label layoutX="23.0" layoutY="82.0" prefHeight="17.0" prefWidth="143.0" text="ORDER ID" />
+                        <Label layoutX="23.0" layoutY="114.0" prefHeight="17.0" prefWidth="143.0" text="PORT" />
+                        <Label layoutX="23.0" layoutY="178.0" prefHeight="17.0" prefWidth="143.0" text="IP ADRESSE" />
+                        <Label layoutX="23.0" layoutY="212.0" prefHeight="17.0" prefWidth="143.0" text="START DATE" />
+                        <Label layoutX="23.0" layoutY="247.0" prefHeight="17.0" prefWidth="143.0" text="END DATE" />
+                        <JFXButton fx:id="createRecipt" buttonType="RAISED" layoutX="23.0" layoutY="296.0" onAction="#createRecipt" style="-fx-background-color: yellow;" text="Create Recipe" />
+                        <TextField fx:id="setPlantHeight" layoutX="486.0" layoutY="231.0" promptText="Set Plant Height" />
+                        <Label layoutX="489.0" layoutY="212.0" prefHeight="17.0" prefWidth="143.0" text="PLANT HEIGHT" />
+                        <Line endX="100.0" layoutX="566.0" layoutY="267.0" scaleX="0.8" startX="-100.0" />
+                        <JFXButton fx:id="createNewRecipe" buttonType="RAISED" layoutX="23.0" layoutY="339.0" onAction="#createNewRecipe" style="-fx-background-color: yellow;" text="Create New Recipe" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Get Order Status" />
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
