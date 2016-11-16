@@ -173,30 +173,30 @@ System.out.println("alarmmmmmmmming");
     }
     
 
-    private void alarmButton(ActionEvent event) throws InterruptedException {
-          Color co = new Color(1.0, 0.0, 0.0, 1.0);
- if(alarmButton.getText().equals("Alarm"))
- {
-     VerticalFarmingGreenHouseSERVER.state = 1;
-     alarmButton.setText("Stop alarm");
- }
- 
-  if(alarmButton.getText().equals("Stop alarm"))
- {
-     VerticalFarmingGreenHouseSERVER.state = 0;
-          alarmButton.setText("Alarm");
-     
- }
- 
- 
- 
- //alarmButton.setText("Stop alarm");
-   //  alarmStatus.setFill(co);
-          // alarmStatus.setVisible(true);
-   boolean run = true;
-        int counter =0;
-    
-   }
+//    private void alarmButton(ActionEvent event) throws InterruptedException {
+//          Color co = new Color(1.0, 0.0, 0.0, 1.0);
+// if(alarmButton.getText().equals("Alarm"))
+// {
+//     VerticalFarmingGreenHouseSERVER.state = 1;
+//     alarmButton.setText("Stop alarm");
+// }
+// 
+//  if(alarmButton.getText().equals("Stop alarm"))
+// {
+//     VerticalFarmingGreenHouseSERVER.state = 0;
+//          alarmButton.setText("Alarm");
+//     
+// }
+// 
+// 
+// 
+// //alarmButton.setText("Stop alarm");
+//   //  alarmStatus.setFill(co);
+//          // alarmStatus.setVisible(true);
+//   boolean run = true;
+//        int counter =0;
+//    
+//   }
 
     @FXML
     private void jfxbuttonAction(ActionEvent event) {
